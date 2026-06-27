@@ -1,13 +1,15 @@
-:root {
---color-bg: #faf7ff;
---color-fg: #191224;
---color-muted: #c4bad1;
---color-accent: #a268f5;
---color-border: #e5e0ee;
+:root {    
+--color-bg: #06010e;
+--color-fg: #ffffff;
+--color-muted: #e4a112e7;
+--color-accent: #29057c;
+--color-border: #d3d8df;
 
 
 --font-sans: "Inter", system-ui, sans-serif;
 --font-display: "Sora", sans-serif;
+--font-feature:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 --space-1: 1rem;
 --space-2: 2.074rem;  
@@ -19,22 +21,25 @@
 *::after { 
      box-sizing:border-box;
     }
-    body{
-        background: var(--color-fg);
-        color: var(--color-bg);
-        font-family: var(--font-display);
-        line-height: 1.6;
-        font-size: var(--space-1);
-    }
+    
+    .continer{ 
+      max-width: 1200px; 
+      margin: 18px auto;
+    padding: 10px; 
+    color: var(--color-bg);
+   font-family: var(--font-display);
+    background: var(--color-fg);
+    line-height: 1.6;
+     border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(19, 19, 153, 0.06);
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+ }
     nav>a{
-color:var(--color-muted) ;
+color:var(--color-muted) 
+;
     }
-    p a{
-       color: var(--color-border);
-    }
-    footer{
-        color: var(--color-accent);
-    }
+   
     h1{
         font-size: var(--space-8);
         font-family: var(--font-sans);
@@ -45,6 +50,63 @@ color:var(--color-muted) ;
     }
     h3{
         font-size: var(--space-2);
-        font-family: var(--font-sanss);
+        font-family: var(--font-sans);
+    }
+    
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-1);
+       margin: var(--space-1);
+  }
+    nav a{
+        text-decoration: none;
+        font-size: var(--space-1);
+        margin-right: 10px;
+        
+
+    }
+        
+    nav a:hover, p a ,footer{
+    color: var(--color-accent);
+    }
+    section{
+border-bottom: 0.5px solid var(--color-border );}
+    .logo{
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+     .hero{
+        padding: 18px,0;
+         }
+    .hero h1{
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+    
+    
+    @media(min-width:768px)
+{
+    .continer{
+        font-size: 1rem;
+    }
+}
+@media(min-width:1280px)
+{
+.continer{
+        font-size: 1.2rem;
+    }
+    }
+
+    .grid h1, h2,h3{
+font-size: 20px;
+margin-left: 10px;
+    }
+footer{
+        text-align: center;
+       font-family: var(--font-feature)
     }
     
