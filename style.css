@@ -88,13 +88,13 @@ border-bottom: 0.5px solid var(--color-border );}
     }
     
     
-    @media(min-width:768px)
+    @media(max-width:768px)
 {
     .continer{
         font-size: 1rem;
     }
 }
-@media(min-width:1280px)
+@media(max-width:1280px)
 {
 .continer{
         font-size: 1.2rem;
