@@ -5,53 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebiyat Hawi</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./src/output.css">
 </head>
     
-<body>
-    
-        <div class="continer">
-            <header>
-                <div class="logo">
-                ❤️  Nebiyat
-        </div>
-        <nav>           
-<a href="index.html">Home</a>
-<a href="project.html">Project</a> 
-<a href="contact.html">Contact</a>
-             </nav>
-            </header>
+<body class="bg-primary">
+     <div>
+ <header class="bg-brand text-white px-8 py-4 flex justify-between items-center">
+ <div class="logo">
+❤️<span class="font-bold text-2xl">Nebiyat</span> 
+ </div>
+
+         <nav>           
+               <ul class="flex gap-6 text-lg">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a> </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>          
+             </nav>         
+    </header>
            <section class="hero">
-            <h1>Hello — I'm  Nebiyat</h1>
-     <p>Web development student who builds web activities with HTML and CSS.<br>
-        I practice responsive layout,clean design,and simple related features.
-     </p> 
+            <h1 class="font-bold text-gray-800 mt-4">Future Full-stack Developer</h1>
+     <p class="text-gray-800 text-2xl m-10 " >I am learning HTML,CSS,Tailwind CSS,<br>
+        This page is built using Tailwind utility classes<br>
+        
+    </p> 
     </section>         
      
      <main>
-    <div>   
-        <section class="grid">
-        <h2>Personal information</h2>
-        <p>I grown jimma with my beloved father and my two sisters,I wish to be a developer, <br>
-        I believe its become true.My role model is resul selelahu aleyhi weselem.
-        my principal is "Dua is life"
-        <br> this line is updated for feature-nav branch.</p>
-        
+    <div class="grid grid-cols-2 gap-6 mt-10"> 
+        <div class="bg-secondary rounded-xl shadow-lg p-6"> 
+        <section>
+        <h2 class="font-bold mb-4">Personal information</h2>
+        <p class="m-10 text-gray-600">I grown jimma with my beloved father and my two sisters,
+        My principal is "Dua is life"
     </section>
     </div>
      
-    <div>
-        <section class="grid">
-        <h3>Learning Journey</h3> <p>
+    <div class="bg-secondary rounded-xl shadow-lg p-6">
+        <section>
+        <h2 class="font-bold mb-4">Learning Journey</h2> <p class="m-10 text-gray-600">
              I am web development student who build small projects with html<br>
-        I like coding and building website: 
-        and,I have a plan to be a good programmer and also a good problem solver.
         </p>
     </section>
+    </div>
     </div>
     </main>
     </div>
 
-    <footer>Built with peace— Practice makes progress.</footer>
+    <footer class="text-brand font-bold m-20 text-center">Built with Tailwind CSS.</footer>
 
 </body>
 

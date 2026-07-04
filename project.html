@@ -5,37 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <div class="continer">
-<header> 
-        <div >Project site </div>
-         <nav>           
-<a href="index.html">Home</a>
-<a href="project.html">Project</a> 
-<a href="contact.html">Contact</a>
-             </nav>
-        
-            
-    </header>
-    <main>
-     <section class="grid">
-        <h1>Projects</h1>
-        <div>
-     <section>
-        <h2>To do list(project)</h2>
-        <p>A simple to-do list made with html and css,
-        I learned and pick up points like making "checkbox" and listed of label for to do list 
-        <br>also making it responsive.</p>
-        </section></div>
-        <div>
-        <section>
-    <h3>Portifolio(this page)</h3>
-        <p>Text-only portifolio built to practice layout and responsive.</p></section>
+<body class="bg-primary">
+    <div>
+    <header class="bg-brand text-white px-8 py-4 flex justify-between items-center w-340">
+             <div class="logo">
+                ❤️<span class="font-bold text-2xl">Nebiyat</span> 
         </div>
+
+         <nav>           
+               <ul class="flex gap-6 text-lg">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a> </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>          
+             </nav>         
+    </header>
+    <main> 
+        <div><h1 class="text-4xl font-bold text-center m-4" >Projects</h1></div>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="bg-secondary rounded-xl shadow-lg p-6">
+     <section class="card-grid">
+        <article class="card">
+        <h2 class="text-2xl font-bold mb-4">To do list</h2>
+        <p class="text-gray-600">A simple to-do list project made with html and css.</p>
+        </article>
+        </section>
+    </div>
+        <div class="bg-secondary rounded-xl shadow-lg p-6">
+        <section class="card-grid">
+            <article class="card">
+    <h2 class="text-2xl font-bold">Portifolio</h3>
+        <p class="text-gray-600">Text-only portifolio built to practice layout and responsive.</p>
+    </article>
+     </section>
+        </div>
+        </div>
+        
+        <section class="px-10 py-10">
+
+            <h2 class="text-4xl font-bold text-center mb-10">My Skills</h2>
+
+            <div class=" grid grid-cols-2 gap-8">
+
+    <div class="bg-secondary rounded-xl shadow-lg p-6">
+
+       <h3 class="text-2xl font-bold mb-4">HTML</h3>
+
+       <p class="text-gray-600" >Semantic HTML5 And Accessibility</p>
+                </div>
+
+
+                <div class="bg-secondary rounded-xl shadow-lg p-6">
+
+       <h3 class="text-2xl font-bold mb-4">CSS</h3>
+
+       <p class="text-gray-500">FlexBox,Grid and Responsive Design</p>
+                </div>
+
+
+                <div class="bg-secondary rounded-xl shadow-lg p-6">
+
+       <h3 class="text-2xl font-bold mb-4">Javascript</h3>
+
+       <p class="text-gray-600">Learning Javascript deeply Every day </p>
+                </div>
+
+            </div>
+        </section>
+        </section>
         </section>
          </main>
          </div>
-         <footer> coding is light</footer>
+         
+         <footer class="text-brand font-bold m-20 text-center"> coding is light</footer>
 </body>
 </html>

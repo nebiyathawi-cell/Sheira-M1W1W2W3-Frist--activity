@@ -1,6 +1,6 @@
 :root {    
 --color-bg: #06010e;
---color-fg: #ffffff;
+--color-fg: #ffffffe8;
 --color-muted: #e4a112e7;
 --color-accent: #29057c;
 --color-border: #d3d8df;
@@ -22,8 +22,9 @@
      box-sizing:border-box;
     }
     
-    .continer{ 
-      max-width: 1200px; 
+    /*.container{ 
+      max-width: 1200px;
+      max-height: 100%; 
       margin: 18px auto;
     padding: 10px; 
     color: var(--color-bg);
@@ -31,36 +32,25 @@
     background: var(--color-fg);
     line-height: 1.6;
      border-radius: 18px;
-    box-shadow: 0 6px 18px rgba(19, 19, 153, 0.06);
-        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    box-shadow: 0 6px 18px rgba(19, 19, 153, 0.06);*/
+    
 
- }
-    nav>a{
-color:var(--color-muted) 
-;
-    }
-   
-    h1{
-        font-size: var(--space-8);
+  h1{
+        font-size:clamp(2rem,5vw + 1rem,3rem);
         font-family: var(--font-sans);
+    
     }
     h2{
-        font-size: var(--space-4);
+        font-size:clamp(1.5rem,5vw + 1rem,2rem);
         font-family: var(--font-sans);
     }
     h3{
-        font-size: var(--space-2);
+        font-size:clamp(1.2rem,5vw + 1rem,1.7rem);
         font-family: var(--font-sans);
     }
     
     
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: var(--space-1);
-       margin: var(--space-1);
-  }
+   
     nav a{
         text-decoration: none;
         font-size: var(--space-1);
@@ -69,44 +59,51 @@ color:var(--color-muted)
 
     }
         
-    nav a:hover, p a ,footer{
+    nav a:hover{
     color: var(--color-accent);
     }
     section{
 border-bottom: 0.5px solid var(--color-border );}
-    .logo{
-        font-weight: 700;
-        font-size: 20px;
-        letter-spacing: 0.2px;
-    }
+    
      .hero{
-        padding: 18px,0;
+        padding: 6px;
+         text-align: center;
          }
-    .hero h1{
-        font-size: 26px;
-        margin-bottom: 6px;
-    }
-    
-    
-    @media(max-width:768px)
+
+
+   /* @media(min-width:360px)
 {
-    .continer{
+    .container{
+        font-size: 0.5rem;
+    }}
+    
+    @media(min-width:768px)
+{
+    .container{
         font-size: 1rem;
     }
 }
-@media(max-width:1280px)
+@media(min-width:1280px)
 {
-.continer{
+.container{
         font-size: 1.2rem;
     }
     }
-
-    .grid h1, h2,h3{
-font-size: 20px;
-margin-left: 10px;
-    }
-footer{
-        text-align: center;
-       font-family: var(--font-feature)
-    }
-    
+    /*.grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    }*/
+.card-grid
+ { 
+ container-type: inline-size; 
+}
+  .card { 
+    padding: 1rem;
+ }
+  @container (min-width: 480px)
+   {  
+  .card { 
+    padding: 2rem; 
+  display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
+ gap: 8px;
+}}
